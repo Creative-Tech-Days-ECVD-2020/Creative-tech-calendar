@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { NavContent, NavItem } from './style';
 
 const Navbar = () => (
-  <nav>
+  <NavContent>
     <ul>
-      <li><Link to="/">Login</Link></li>
-      <li><Link to="/events">Events</Link></li>
-      <li><Link to="/calendar">Calendar</Link></li>
+      <NavItem><Link to="/">Login</Link></NavItem>
+      <NavItem><Link to="/events">Events</Link></NavItem>
+      <NavItem><Link to="/calendar">Calendar</Link></NavItem>
     </ul>
-  </nav>
+  </NavContent>
 );
 
 export default Navbar;
