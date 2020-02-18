@@ -1,0 +1,1 @@
+// TODO Create HOC for check if the customer is authenticate or not
