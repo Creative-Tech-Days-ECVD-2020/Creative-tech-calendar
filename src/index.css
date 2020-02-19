@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #5878FF;
+  color: white;
+}
+
+.home-section-image-1, .home-section-image-2{
+  position: absolute;
+}
+
+.home-section-image-1{
+  position: absolute;
+  left: 6.01%;
+  right: 77.54%;
+  top: 11.07%;
+  bottom: 67.06%;
+  background-image: url('/images/smile-décli-ux@2x.png');
+  transform: rotate(60deg);
+}
+.home-section-image-2{
+  position: absolute;
+  left: 90.04%;
+  right: -6.49%;
+  top: 33.46%;
+  bottom: 44.66%;
+  background-image: url('/images/smile-décli-webmarket@2x.png');
+}
