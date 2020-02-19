@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 const HomeQuestion = () => (
   <button to="/" className="home-section-question">
-    La question de la semaine >
+    <span>La question de la semaine</span>
+    <img src="../images/Polygon_1.png"/>
   </button>
 );
 

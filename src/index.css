@@ -94,6 +94,12 @@ h1{
   top: 85.29%;
   bottom: 4.17%;
 
+  font-weight: 900;
+  text-shadow: 0px 2px rgba(0,0,0,0.5);
+
+  display: flex;
+  align-items: center;
+
   background: #FFFFFF;
   box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -102,9 +108,18 @@ h1{
 
   font-family: Larsseit;
   font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+}
+
+.home-section-question span{
+  width: 75%;
+  margin-left: 4%;
+}
+
+.home-section-question img{
+  margin-left: 6%;
 }
