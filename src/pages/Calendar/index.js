@@ -18,13 +18,29 @@ const convert = async (fileLocation) => {
     return data
 }
 
+/*
+case START_DATE:
+        currentObj[keyMap[START_DATE]] = new Date(value.replace(
+          /^(\d{4})(\d\d)(\d\d)T(\d\d)(\d\d)(\d\d)Z$/,
+          '$4:$5:$6 $2/$3/$1'
+      )).toISOString();
+        break;
+
+      case END_DATE:
+        currentObj[keyMap[END_DATE]] = new Date(value.replace(
+          /^(\d{4})(\d\d)(\d\d)T(\d\d)(\d\d)(\d\d)Z$/,
+          '$4:$5:$6 $2/$3/$1'
+      )).toISOString();
+        break;
+*/
+
 const Calendar = () => {
     
     const [events, setEvents] = useState({});
 
     useEffect(() => {
         const getData = async () => {
-            const data = await convert('http://ecv-hp.imadiff.net:85/Telechargements/ical/Edt_CABIATI.ics?version=2018.0.3.6&idICal=9C13103BDC929102D2342023975E6449&param=643d5b312e2e36325d2666683d3126663d31')
+            const data = await convert('http://moncalendar.com/file.ics')
             setEvents(data);
         }
         getData();
