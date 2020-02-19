@@ -4,19 +4,23 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Navbar from '../components/Navbar';
-import Events from './Events';
-import Calendar from './Calendar';
-import Login from './Login';
+import Navbar from '../components/navbar';
+import Home from './home';
+import AuthenticationVerification from './authentication-verification'
+import Authentication from './authentication'
+import SignRecord from './sign-record';
+import CreativeTechWeek from './creative-tech-week';
 
 const App = () => (
   <div className="App">
     <Router>
       <Navbar/>
       <Switch>
-        <Route path="/" exact component={Login} />
-        <Route path="/events" component={Events} />
-        <Route path="/calendar" component={Calendar} />
+        <Route path="/" exact component={Home} />
+        <Route path="/authentication-verification" component={AuthenticationVerification} />
+        <Route path="/authentication" component={Authentication} />
+        <Route path="/creative-tech-week" component={CreativeTechWeek} />
+        <Route path="/sign-record" component={SignRecord} />
       </Switch>
     </Router>
   </div>
