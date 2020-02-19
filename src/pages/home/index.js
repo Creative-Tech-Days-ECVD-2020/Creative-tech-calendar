@@ -5,14 +5,14 @@ import HomeQuestion from '../../components/buttonhomequestion/index';
 // import badge from '../../../public/images/Card.png';
 
 const Home = () => 
-    <section class="home-section">
-        <div class="home-section-image-1"></div>
-        <div class="home-section-image-2"></div>
-        <div class="home-section-badge">
-            <div class="home-section-badge-image"></div>
+    <section className="home-section">
+        <div className="home-section-image-1"></div>
+        <div className="home-section-image-2"></div>
+        <div className="home-section-badge">
+            <div className="home-section-badge-image"></div>
             <h1>Badge pour émarger</h1>
         </div>
-        <HomeQuestion class="home-section-question"></HomeQuestion>
+        <HomeQuestion></HomeQuestion>
     </section>;
 
 export default Home;

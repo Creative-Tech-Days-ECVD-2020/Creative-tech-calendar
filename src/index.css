@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Larsseit";
+  src: local('Larsseit-Medium'), url("/fonts/Larsseit/Larsseit-Medium.ttf") format("truetype"),
+  url("/fonts/Larsseit/Larsseit-Medium.ttf") format("truetype");
+ }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -22,14 +28,17 @@ code {
   height: 100vh;
   background-color: #5878FF;
   color: white;
+  overflow: hidden;
 }
 
 .home-section-image-1, .home-section-image-2{
-  position: absolute;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .home-section-image-1{
-  position: absolute;
   left: 6.01%;
   right: 77.54%;
   top: 11.07%;
@@ -38,10 +47,64 @@ code {
   transform: rotate(60deg);
 }
 .home-section-image-2{
-  position: absolute;
   left: 90.04%;
   right: -6.49%;
   top: 33.46%;
   bottom: 44.66%;
   background-image: url('/images/smile-décli-webmarket@2x.png');
+}
+
+.home-section-badge{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-self: center;
+  align-items: center;
+}
+.home-section-badge-image{
+  width: 159.46px;
+  height: 142.33px;
+  left: 432px;
+  top: 248px;
+  background-image: url('/images/Card.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+h1{
+  margin: 40px;
+  font-family: Noe Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  /* identical to box height, or 100% */
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+.home-section-question{
+  position: absolute;
+  left: 70.8%;
+  right: 3.12%;
+  top: 85.29%;
+  bottom: 4.17%;
+
+  background: #FFFFFF;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  text-align: left;
+
+  font-family: Larsseit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
