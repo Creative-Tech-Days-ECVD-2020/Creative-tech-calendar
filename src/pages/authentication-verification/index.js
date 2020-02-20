@@ -5,7 +5,7 @@ import { BackLink, VerificationWrapper } from './style';
 
 const AuthenticationVerification = () => (
   <VerificationWrapper>
-    <BackLink to="/sign-record">&lt; Retour</BackLink>
+    <BackLink to="/home-connect">&lt; Retour</BackLink>
     <EmojiMessage text="Ta signature a bien été enregistrée !" status="success" sign />
   </VerificationWrapper>
 );

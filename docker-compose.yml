@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  web: 
+    build: ./creative-tech-front
+    volumes:
+      - './creative-tech-front:/app'
+    ports:
+      - "0.0.0.0:3001:3000"

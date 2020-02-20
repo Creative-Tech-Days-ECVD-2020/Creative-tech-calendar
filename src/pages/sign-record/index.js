@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import SignatureCanvas from 'react-signature-canvas';
 import { useHistory } from 'react-router-dom';
 import { SignRecordContent,SignRecordLabel, SignRecordButtons, SignRecordButton, AcceptContent, SignRecordTitle } from './style';
@@ -12,7 +12,7 @@ const SignRecord = () => {
   return (
     <SignRecordContent>
       <SignRecordTitle>Bienvenue,</SignRecordTitle>
-      <h2>Anne OHNIME</h2>
+      <h2>Thomas NGUYEN</h2>
       <h3>ID. 2854923562</h3>
       <h3>M2 UX DESIGN</h3>
       <form>
