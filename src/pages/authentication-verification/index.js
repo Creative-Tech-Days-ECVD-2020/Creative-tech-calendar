@@ -1,16 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import EmojiMessage from '../../components/EmojiMessage';
 import OrangeLayout from '../../hocs/orangeLayout';
-import { BackLink, VerificationContent, VerificationWrapper } from './style';
+import { BackLink, VerificationWrapper } from './style';
 
 const AuthenticationVerification = () => (
   <VerificationWrapper>
     <BackLink to="/sign-record">&lt; Retour</BackLink>
-    <VerificationContent>
-      <img src="images/smile-base.png" alt="Smile emoji" />
-      <h1>Ta signature a bien été enregistrée !</h1>
-      <Link to="/sign-record">Modifier ma signature</Link>
-    </VerificationContent>
+    <EmojiMessage text="Ta signature a bien été enregistrée !" status="success" sign />
   </VerificationWrapper>
 );
 
