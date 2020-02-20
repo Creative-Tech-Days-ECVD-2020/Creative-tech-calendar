@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Larsseit";
+  src: local('Larsseit-Medium'), url("/fonts/Larsseit/Larsseit-Medium.ttf") format("truetype"),
+  url("/fonts/Larsseit/Larsseit-Medium.ttf") format("truetype");
+ }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,4 +23,147 @@ code {
   height: 30vh;
   border: 1px solid black;
   border-radius: 10px;
+}
+.home-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #5878FF;
+  color: white;
+  overflow: hidden;
+}
+
+.home-section-image-1, .home-section-image-2{
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.home-section-image-1{
+  left: 6.01%;
+  right: 77.54%;
+  top: 11.07%;
+  bottom: 67.06%;
+  background-image: url('/images/smile-décli-ux@2x.png');
+  transform: rotate(60deg);
+	animation: float 6s ease-in-out infinite;
+}
+.home-section-image-2{
+  left: 90.04%;
+  right: -6.49%;
+  top: 33.46%;
+  bottom: 44.66%;
+  background-image: url('/images/smile-décli-webmarket@2x.png');
+	animation: float 4s ease-in-out infinite;
+}
+
+.home-section-badge{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-self: center;
+  align-items: center;
+}
+.home-section-badge-image{
+  width: 159.46px;
+  height: 142.33px;
+  left: 432px;
+  top: 248px;
+  background-image: url('/images/Card.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+	animation: floatBadge 3s ease-in-out infinite;
+}
+
+h1{
+  margin: 40px;
+  font-family: Noe Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  /* identical to box height, or 100% */
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+.home-section-question{
+  position: absolute;
+  left: 70.8%;
+  right: 3.12%;
+  top: 85.29%;
+  bottom: 4.17%;
+
+  font-weight: 900;
+  text-shadow: 0px 2px rgba(0,0,0,0.5);
+
+  display: flex;
+  align-items: center;
+
+  background: #FFFFFF;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  text-align: left;
+
+  font-family: Larsseit;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+}
+
+.home-section-question span{
+  width: 75%;
+  margin-left: 4%;
+}
+
+.home-section-question img{
+  margin-left: 6%;
+	animation: arrowMove 1s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes floatBadge {
+	0% {
+    width: 159.46px;
+		transform: translatey(0px);
+	}
+	50% {
+    width: 119.46px;
+		transform: translatey(-20px);
+	}
+	100% {
+    width: 159.46px;
+		transform: translatey(0px);
+	}
+}
+@keyframes arrowMove {
+	0% {
+    margin-left: 2%;
+	}
+	100% {
+    margin-left: 6%;
+	}
 }
