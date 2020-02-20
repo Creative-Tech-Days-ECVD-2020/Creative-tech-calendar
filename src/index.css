@@ -145,6 +145,108 @@ h1 {
 	animation: arrowMove 1s ease-in-out infinite;
 }
 
+.all-questions{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.question-image-1{
+  position: absolute;
+
+  left: -1%;
+  right: 72.88%;
+  top: 72.53%;
+  bottom: -10.03%;
+  width: 288px;
+  height: 288px;
+  
+  transform: rotate(2.33deg);
+  background-image: url('/images/smile-base-orange.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+	animation: float 6s ease-in-out infinite;
+}
+.return-button{
+
+  position: absolute;
+  left: 6.84%;
+  right: 88.38%;
+  top: 14.97%;
+  bottom: 82.68%;
+  
+  /* Link */
+  
+  font-family: Larsseit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  
+  color: #000000;
+}
+
+.home-section-question h2{
+  left: 13.87%;
+  right: 13.96%;
+  top: 38.67%;
+  bottom: 55.6%;
+  
+  /* Heading 1 */
+  
+  font-family: Noe Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 90%;
+  /* or 36px */
+  
+  text-align: center;
+  
+  color: #000000;
+}
+
+.all-questions button{
+  left: 8.69%;
+  right: 72.27%;
+  top: 60.55%;
+  bottom: 33.72%;
+  
+  background: #5878FF;
+  border-radius: 10px;
+
+  width: 130px;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.home-section-question button a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Larsseit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
 @keyframes float {
 	0% {
 		transform: translatey(0px);
