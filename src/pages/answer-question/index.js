@@ -2,10 +2,10 @@ import React from 'react';
 import HomeButton from '../../components/HomeButton/index';
 import HomeBadge from '../../components/HomeBadge/index';
 
-const Home = () => 
+const AnswerQuestion = () => 
     <section className="home-section">
-        <HomeBadge name="Badge pour émarger"></HomeBadge>
-        <HomeButton name="La question de la semaine" route="/answer-question"></HomeButton>
+        <HomeBadge name="Badge pour répondre"></HomeBadge>
+        <HomeButton name="émarger"  route="/"></HomeButton>
     </section>;
 
-export default Home;
+export default AnswerQuestion;

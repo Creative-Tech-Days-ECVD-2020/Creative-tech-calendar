@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const HomeQuestion = (props) => (
-  <button to="/" className="home-section-question">
-    <span>La question de la semaine</span>
-    <img src="../images/Polygon_1.png"/>
+const HomeButton = ({name, route}) => (
+  <button className="home-section-button">
+    <Link to={route} className="link">
+      <span>{name}</span>
+      <img src="../images/Polygon_1.png"/>
+    </Link>
   </button>
 );
 
-export default HomeQuestion;
+export default HomeButton;
