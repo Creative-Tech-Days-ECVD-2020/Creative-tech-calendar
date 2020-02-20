@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const SignRecordTitle = styled.h1`
-  line-height: 14px;
+  line-height: 30px;
   padding-top: 5vh;
   margin: 0;
+  font-family: Arial;
   text-align: center;
   font-size: 1.3em;
   color: black;
@@ -12,12 +13,15 @@ export const SignRecordTitle = styled.h1`
 export const SignRecordContent = styled.div`
   width: 70%;
   margin:auto;
-
+  & h2 {
+    font-family: Noe Display;
+  }
   & h2 + h3 {
     padding-top: 5vh;
   }
 
   & h3 {
+    font-weight: 400;
     letter-spacing: 5px;
   }
 
@@ -29,9 +33,10 @@ export const SignRecordContent = styled.div`
 
 export const SignRecordLabel = styled.label`
   display: block;
-  padding-top: 5vh;
+  padding-top: 10vh;
   padding-bottom: 1vh;
   font-weight: bold;
+  text-transform: uppercase;
 `;
 
 export const SignRecordButtons = styled.div`
@@ -46,6 +51,11 @@ export const AcceptContent = styled.div`
   margin-top: 2vh;
   align-items: flex-start;
   
+  & label {
+    font-weight: 300;
+    font-size: 0.9em;
+  }
+
   & input {
     margin-right: 10px;
   }
@@ -63,4 +73,8 @@ export const SignRecordButton = styled.button(({ highlight }) => `
   font-weight: 500;
   border: 1px solid #5878FF;
   border-radius: 10px;
+
+  &:disabled {
+    background: rgb(88,120,255, .5);
+  }
 `);
