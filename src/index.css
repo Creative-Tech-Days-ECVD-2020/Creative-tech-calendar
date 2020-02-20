@@ -142,7 +142,7 @@ h1 {
   width: 85%;
 }
 .home-section-button a img{
-	animation: arrowMove 3s ease-in-out infinite;
+	animation: arrowMove 1s ease-in-out infinite;
 }
 
 @keyframes float {
