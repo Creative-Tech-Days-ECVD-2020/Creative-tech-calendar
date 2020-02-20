@@ -8,9 +8,9 @@ import {
 import Header from '../components/header';
 import Home from './home';
 import AuthenticationVerification from './authentication-verification';
-import Authentication from './authentication';
 import SignRecord from './sign-record';
 import CreativeTechWeek from './creative-tech-week';
+import Welcome from './welcome';
 
 const App = () => (
   <div className="App">
@@ -19,7 +19,7 @@ const App = () => (
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/authentication-verification" component={AuthenticationVerification} />
-          <Route path="/authentication" component={Authentication} />
+          <Route path="/welcome" component={Welcome} />
           <Route path="/creative-tech-week" component={CreativeTechWeek} />
           <Route path="/sign-record" component={SignRecord} />
         </Switch>
