@@ -5,7 +5,6 @@ import {
   Route,
 } from "react-router-dom";
 // import Navbar from '../components/navbar';
-import Header from '../components/header';
 import Home from './home';
 import AuthenticationVerification from './authentication-verification';
 import Authentication from './authentication';
@@ -16,7 +15,6 @@ import AnswerQuestion from './answer-question';
 const App = () => (
   <div className="App">
     <Router>
-      <Header/>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/authentication-verification" component={AuthenticationVerification} />
