@@ -8,6 +8,7 @@ export const HeaderContent = styled.div`
   top: 5vh;
   left: 5%;
   right: 5%;
+  z-index: 10;
   
   & img {
     height: 4vh;
