@@ -1,7 +1,7 @@
 import React from 'react';
 import SignatureCanvas from 'react-signature-canvas';
 import { useHistory } from 'react-router-dom';
-import { SignRecordContent,SignRecordLabel, SignRecordButtons, SignRecordButton, AcceptContent } from './style';
+import { SignRecordContent,SignRecordLabel, SignRecordButtons, SignRecordButton, AcceptContent, SignRecordTitle } from './style';
 import OrangeLayout from '../../hocs/orangeLayout';
 
 const SignRecord = () => {
@@ -9,7 +9,7 @@ const SignRecord = () => {
 
   return (
     <SignRecordContent>
-      <h1>Bienvenue,</h1>
+      <SignRecordTitle>Bienvenue,</SignRecordTitle>
       <h2>Anne OHNIME</h2>
       <h3>ID. 2854923562</h3>
       <h3>M2 UX DESIGN</h3>

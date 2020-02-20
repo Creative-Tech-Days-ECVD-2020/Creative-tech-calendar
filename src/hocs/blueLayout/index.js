@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/header';
 import { MainContent }  from './style';
 
-const OrangeLayout = WrappedComponent => {
+const BlueLayout = WrappedComponent => {
   const Layout = () => (
     <>
       <Header/>
@@ -14,4 +14,4 @@ const OrangeLayout = WrappedComponent => {
   return Layout;
 };
 
-export default OrangeLayout;
+export default BlueLayout;

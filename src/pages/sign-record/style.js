@@ -1,13 +1,18 @@
 import styled from 'styled-components';
 
+export const SignRecordTitle = styled.h1`
+  line-height: 14px;
+  padding-top: 5vh;
+  margin: 0;
+  text-align: center;
+  font-size: 1.3em;
+  color: black;
+`;
+
 export const SignRecordContent = styled.div`
   width: 70%;
   margin:auto;
 
-  & h1 {
-    padding-top: 5vh;
-  }
-  
   & h2 + h3 {
     padding-top: 5vh;
   }
@@ -16,7 +21,7 @@ export const SignRecordContent = styled.div`
     letter-spacing: 5px;
   }
 
-  & h1, h2, h3 {
+  & h2, h3 {
     margin: 0;
     text-align: center;
   }
