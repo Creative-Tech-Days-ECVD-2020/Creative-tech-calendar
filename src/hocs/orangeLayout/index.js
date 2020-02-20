@@ -5,7 +5,7 @@ import { MainContent }  from './style';
 const OrangeLayout = WrappedComponent => {
   const Layout = () => (
     <>
-      <Header/>
+      <Header color="orange"/>
       <MainContent>
         <WrappedComponent/>
       </MainContent>

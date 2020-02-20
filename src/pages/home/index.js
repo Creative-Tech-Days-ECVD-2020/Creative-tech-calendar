@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeButton from '../../components/HomeButton/index';
 import HomeBadge from '../../components/HomeBadge/index';
+import BlueLayout from '../../hocs/blueLayout';
 
 const Home = () => 
     <section className="home-section">
@@ -8,4 +9,4 @@ const Home = () =>
         <HomeButton name="La question de la semaine" route="/answer-question"></HomeButton>
     </section>;
 
-export default Home;
+export default BlueLayout(Home);

@@ -1,10 +1,10 @@
 import React from 'react';
 import { HeaderContent } from './style';
 
-const Header = () => (
+const Header = ({ color }) => (
   <HeaderContent>
     <p>ECV DIGITAL</p>
-    <img src="./images/open-logo.png" alt="Open logo"/>
+    <img src={`./images/open-logo-${color}.png`} alt="Open logo"/>
   </HeaderContent>
 ) 
 
