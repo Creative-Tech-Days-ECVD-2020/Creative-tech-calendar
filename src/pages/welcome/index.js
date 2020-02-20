@@ -19,13 +19,10 @@ const Welcome = () =>
 
     <div className="welcome-footer">
         <div className="left-footer">
-            <p>SALLE</p>
-            <p>202</p>
+            SALLE<br/>202
         </div>
         <div className="right-footer">
-            <p>Dataviz</p>
-            <p>Intervenant - Cristiano</p>
-            <p>9 - 12h</p>
+        <span className="text-important">Dataviz</span> <br/> Intervenant - Mr Test <br/> 9 - 12h
         </div>
     </div>
 
