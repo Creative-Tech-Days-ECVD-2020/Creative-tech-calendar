@@ -1,7 +1,7 @@
 # o-pen
 
-An application allowging students to confirm their attendance. This application works thanks to RFID scanner link to MQTT broker.
-This project use `npm` and `yarn`.
+An application allowing students to confirm their attendance. This application works thanks to RFID scanner link to MQTT broker.
+This project use `npm` and `yarn`. You can run this project with docker.
 
 ## Commands
 
@@ -19,7 +19,7 @@ yarn build
 
 * [aos](https://michalsnik.github.io/aos/)
 * [styled-components](https://styled-components.com/)
-* [Redux] (https://redux.js.org/)
+* [Redux](https://redux.js.org/)
 * [React-router](https://reacttraining.com/react-router/web/guides/quick-start)
 * [react-signature-canvas](https://github.com/agilgur5/react-signature-canvas)
 
@@ -31,7 +31,7 @@ yarn build
     ├── images                       # Pictures used by the application
     ├── fonts                        # Font used by the application
 ├── src
-    ├── components                   # Components use by containers or pages
+    ├── components                   # Components used by containers or pages
     ├── containers                   # Components that use redux logic
     ├── hocs                         # Here we use HOC for set background-color on each page (either blue or orange)
     ├── pages                        # Application's pages
