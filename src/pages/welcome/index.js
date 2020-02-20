@@ -18,7 +18,15 @@ const Welcome = () =>
     </div>
 
     <div className="welcome-footer">
-        SALLE 202
+        <div className="left-footer">
+            <p>SALLE</p>
+            <p>202</p>
+        </div>
+        <div className="right-footer">
+            <p>Dataviz</p>
+            <p>Intervenant - Cristiano</p>
+            <p>9 - 12h</p>
+        </div>
     </div>
 
 </section>;

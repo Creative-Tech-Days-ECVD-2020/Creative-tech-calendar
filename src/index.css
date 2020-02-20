@@ -101,10 +101,8 @@ code {
 }
 
 .welcome-footer{
-  position: relative;
-  width: 30%;
+  width: 45%;
   height:80px;
-  top:20px;
   background:white;
   border-radius:24px;
   border: 1px solid black;
@@ -114,17 +112,20 @@ code {
   font-size: 28px;
   font-weight: bold;
   color:#F2994A;
+  display: flex;
 }
 
-.left-footer{
-  float:left;
-  letter-spacing: 0.3em;
-  width: 20%;
+.welcome-footer .left-footer{
+  height:50px;
+  width:40%;
+  line-height: 0.3em;
 }
-.right-footer{
-  float: right;
+.welcome-footer .right-footer{
   font-size: 18px;
-  width: 60%;
+  line-height: 0.5em;
+  height:50px;
+  width:60%;
+  text-align: left;
 }
 
 .welcome-link{
