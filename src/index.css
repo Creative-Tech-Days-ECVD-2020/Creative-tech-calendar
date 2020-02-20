@@ -87,7 +87,7 @@ code {
   margin-top: 120px;
   width: 120px;
   height: 120px;
-  background-image: url('/images/smile-base.png');
+  background-image: url('/images/smile-success.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -106,7 +106,6 @@ code {
   width: 45%;
   background:white;
   border-radius:24px;
-  border: 1px solid black;
   margin: 0 auto;
   font-family: Larsseit;
   font-size: 28px;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import OrangeLayout from "../../hocs/orangeLayout";
 
 const Welcome = () => 
 
@@ -10,7 +11,7 @@ const Welcome = () =>
     </div>
 
     <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center" className="welcome-page-smile"></div>
+    data-aos-anchor-placement="bottom-center" className="welcome-page-smile"/>
 
     <div className="welcome-title">
         <p>Ta signature a bien été enregistrée !</p>
@@ -28,4 +29,4 @@ const Welcome = () =>
 
 </section>;
 
-export default Welcome;
+export default OrangeLayout(Welcome);
