@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeQuestion from '../../components/buttonhomequestion/index';
+import HomeButton from '../../components/HomeButton/index';
 
 const Home = (props) => 
     <section className="home-section">
@@ -9,7 +9,7 @@ const Home = (props) =>
             <div className="home-section-badge-image" data-aos="flip-up" data-aos-duration="1000"></div>
             <h1 data-aos="zoom-out-up" data-aos-duration="1000">Badge pour émarger</h1>
         </div>
-        <HomeQuestion name="La question de la semaine"></HomeQuestion>
+        <HomeButton name="La question de la semaine"></HomeButton>
     </section>;
 
 export default Home;
