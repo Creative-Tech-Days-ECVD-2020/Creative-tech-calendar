@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HomeQuestion = () => (
+const HomeQuestion = (props) => (
   <button to="/" className="home-section-question">
     <span>La question de la semaine</span>
     <img src="../images/Polygon_1.png"/>

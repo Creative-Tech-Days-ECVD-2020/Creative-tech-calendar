@@ -45,6 +45,7 @@ code {
   bottom: 67.06%;
   background-image: url('/images/smile-décli-ux@2x.png');
   transform: rotate(60deg);
+	animation: float 6s ease-in-out infinite;
 }
 .home-section-image-2{
   left: 90.04%;
@@ -52,6 +53,7 @@ code {
   top: 33.46%;
   bottom: 44.66%;
   background-image: url('/images/smile-décli-webmarket@2x.png');
+	animation: float 4s ease-in-out infinite;
 }
 
 .home-section-badge{
@@ -71,6 +73,7 @@ code {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+	animation: floatBadge 3s ease-in-out infinite;
 }
 
 h1{
@@ -122,4 +125,39 @@ h1{
 
 .home-section-question img{
   margin-left: 6%;
+	animation: arrowMove 1s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes floatBadge {
+	0% {
+    width: 159.46px;
+		transform: translatey(0px);
+	}
+	50% {
+    width: 119.46px;
+		transform: translatey(-20px);
+	}
+	100% {
+    width: 159.46px;
+		transform: translatey(0px);
+	}
+}
+@keyframes arrowMove {
+	0% {
+    margin-left: 2%;
+	}
+	100% {
+    margin-left: 6%;
+	}
 }

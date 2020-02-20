@@ -16,7 +16,7 @@ const App = () => (
     <Router>
       <Navbar/>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Home} name="Badge pour émarger" />
         <Route path="/authentication-verification" component={AuthenticationVerification} />
         <Route path="/authentication" component={Authentication} />
         <Route path="/creative-tech-week" component={CreativeTechWeek} />
