@@ -11,6 +11,7 @@ import AuthenticationVerification from './authentication-verification';
 import SignRecord from './sign-record';
 import CreativeTechWeek from './creative-tech-week';
 import Welcome from './welcome';
+import AnswerQuestion from './answer-question';
 
 const App = () => (
   <div className="App">
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/welcome" component={Welcome} />
           <Route path="/creative-tech-week" component={CreativeTechWeek} />
           <Route path="/sign-record" component={SignRecord} />
+          <Route path="/answer-question" component={AnswerQuestion} />
         </Switch>
     </Router>
   </div>
